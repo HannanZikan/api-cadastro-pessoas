@@ -1,8 +1,5 @@
 /* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { PeopleModule } from './people/people.module';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
@@ -18,7 +15,6 @@ import { TypeOrmModule } from '@nestjs/typeorm';
             database: process.env.MYSQL_DATABASE,
             synchronize: false,
         }),
-        PeopleModule,
     ],
     controllers: [AppController],
     providers: [AppService],

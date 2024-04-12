@@ -36,6 +36,6 @@ services:
             - MYSQL_USERNAME=$MYSQL_USERNAME
             - MYSQL_PASSWORD=$MYSQL_PASSWORD
         ports:
-            - $NODE_LOCAL_PORT:$NODE_LOCAL_PORT
+            - $NODE_LOCAL_PORT:$NODE_DOCKER_PORT
         stdin_open: true
         tty: true
